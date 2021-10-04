@@ -6,23 +6,83 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <EditText
+        android:id="@+id/firstNum"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:hint="Első szám"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="false"
+        app:layout_constraintEnd_toStartOf="@+id/lastNum"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
-        android:layout_marginEnd="64dp"
-        android:text="Test putton for commit"
+    <EditText
+        android:id="@+id/lastNum"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="Masadik szam"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/resultBox"
+        android:layout_width="292dp"
+        android:layout_height="81dp"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extractButt"
+        app:layout_constraintVertical_bias="0.405" />
+
+    <Button
+        android:id="@+id/addButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNum" />
+
+    <Button
+        android:id="@+id/extractButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/addButt"
+        app:layout_constraintTop_toBottomOf="@+id/firstNum" />
+
+    <Button
+        android:id="@+id/multiplyButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:text="*"
+        app:layout_constraintStart_toEndOf="@+id/extractButt"
+        app:layout_constraintTop_toBottomOf="@+id/lastNum" />
+
+    <Button
+        android:id="@+id/divisionButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/multiplyButt"
+        app:layout_constraintTop_toBottomOf="@+id/lastNum" />
 </androidx.constraintlayout.widget.ConstraintLayout>
