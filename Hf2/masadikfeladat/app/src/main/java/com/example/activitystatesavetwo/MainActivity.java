@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkBox=findViewById(R.id.checkBox);
         outState.putBoolean("checkboxvalue",checkBox.isChecked());
 
+
     }
 
     @Override
