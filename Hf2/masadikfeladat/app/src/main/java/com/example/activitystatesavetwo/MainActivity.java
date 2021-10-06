@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putString("edittextvalue",modifiedbox.getText().toString());
         CheckBox checkBox=findViewById(R.id.checkBox);
         outState.putBoolean("checkboxvalue",checkBox.isChecked());
+
     }
 
     @Override
