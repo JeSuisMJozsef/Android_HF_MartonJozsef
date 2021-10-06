@@ -13,5 +13,3 @@
 .externalNativeBuild
 .cxx
 local.properties
-push.sh
-/push.sh
